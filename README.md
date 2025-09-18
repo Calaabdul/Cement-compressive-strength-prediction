@@ -76,15 +76,7 @@ Or access the live demos above.
 The model will output the estimated age (in years) of the abalone.
 
 
-## 🛠 Tech Stack
-
-Language: Python 3.9+
-
-Libraries: Pandas, NumPy, Scikit-learn, Streamlit, Matplotlib/Seaborn
-
-Deployment: Streamlit Cloud, Render
-
-
 ## Create a virtual environment and install dependencies:
 `pip install -r requirements.txt`
+
 
