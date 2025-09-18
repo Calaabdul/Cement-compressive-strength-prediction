@@ -1,97 +1,64 @@
-Concrete Compressive Strength 
+# 🏗️ Concrete Compressive Strength
 
----------------------------------
+---
 
-Data Type: multivariate
+## 📌 Project Overview  
+Concrete is the most widely used construction material in the world, and its compressive strength is a critical property for structural design and safety. Traditionally, testing concrete strength requires **laboratory experiments** that are time-consuming and costly.  
+
+This project builds a **machine learning model** that predicts the compressive strength of concrete based on its mix proportions (cement, water, aggregates, etc.). The solution is deployed on **Streamlit Cloud** and **Render**, so anyone can try it online without specialized lab equipment. 
+
+---
+
+## 🚀 Live Demo  
+
+- [🌍 Render App](https://cement-compressive-strength-prediction.onrender.com)  
+- [⚡ Streamlit Cloud App](https://cement-compressive-strength-prediction-expfvdryzmvleb7ar7fadp.streamlit.app/)  
+
+### Demo Screenshots / Videos  
+[![Streamlit Demo](images/streamlit_demo.png)](YOUR_STREAMLIT_LINK)  
  
-Abstract: Concrete is the most important material in civil engineering. The 
-concrete compressive strength is a highly nonlinear function of age and 
-ingredients. These ingredients include cement, blast furnace slag, fly ash, 
-water, superplasticizer, coarse aggregate, and fine aggregate.
+---
 
----------------------------------
+## 📂 Table of Contents  
+1. [Dataset](#-dataset)  
+2. [Project Workflow](#-project-workflow)  
+3. [Installation & Usage](#-installation--usage)  
+4. [How to Use the App](#-how-to-use-the-app)   
+5. [License](#-license)  
 
-Sources: 
+---
 
-  Original Owner and Donor
-  Prof. I-Cheng Yeh
-  Department of Information Management 
-  Chung-Hua University, 
-  Hsin Chu, Taiwan 30067, R.O.C.
-  e-mail:icyeh@chu.edu.tw
-  TEL:886-3-5186511
+## 📊 Dataset  
+- **Source:** [UCI Machine Learning Repository – Concrete Compressive Strength Dataset](https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength)  
+- **Description:**  
+  - Features (ingredients in kg/m³):  
+    - Cement  
+    - Blast Furnace Slag  
+    - Fly Ash  
+    - Water  
+    - Superplasticizer  
+    - Coarse Aggregate  
+    - Fine Aggregate  
+    - Age (in days)  
+  - Target: **Compressive Strength (MPa)**  
 
-  Date Donated: August 3, 2007
- 
----------------------------------
+---
 
-Data Characteristics:
-    
-The actual concrete compressive strength (MPa) for a given mixture under a 
-specific age (days) was determined from laboratory. Data is in raw form (not scaled). 
+## ⚙️ Project Workflow  
+1. **Data Collection** → UCI dataset.  
+2. **Data Preprocessing** → Checked for missing values, normalized features.  
+3. **Model Training** → Trained regression models (e.g., Random Forest, Gradient Boosting).  
+4. **Model Evaluation** → Evaluated using MAE, RMSE, R² score.  
+5. **Deployment** → Deployed interactive app using Streamlit on Streamlit Cloud & Render.  
 
-Summary Statistics: 
+---
 
-Number of instances (observations): 1030
-Number of Attributes: 9
-Attribute breakdown: 8 quantitative input variables, and 1 quantitative output variable
-Missing Attribute Values: None
+## 💻 Installation & Usage  
 
----------------------------------
+Clone the repository:  
+```bash
+git clone 
+cd concrete-compressive-strength
 
-Variable Information:
-
-Given is the variable name, variable type, the measurement unit and a brief description. 
-The concrete compressive strength is the regression problem. The order of this listing 
-corresponds to the order of numerals along the rows of the database. 
-
-Name -- Data Type -- Measurement -- Description
-
-Cement (component 1) -- quantitative -- kg in a m3 mixture -- Input Variable
-Blast Furnace Slag (component 2) -- quantitative -- kg in a m3 mixture -- Input Variable
-Fly Ash (component 3) -- quantitative -- kg in a m3 mixture -- Input Variable
-Water (component 4) -- quantitative -- kg in a m3 mixture -- Input Variable
-Superplasticizer (component 5) -- quantitative -- kg in a m3 mixture -- Input Variable
-Coarse Aggregate (component 6) -- quantitative -- kg in a m3 mixture -- Input Variable
-Fine Aggregate (component 7) -- quantitative -- kg in a m3 mixture -- Input Variable
-Age -- quantitative -- Day (1~365) -- Input Variable
-Concrete compressive strength -- quantitative -- MPa -- Output Variable 
----------------------------------
-
-Past Usage: 
-
-Main
-1. I-Cheng Yeh, "Modeling of strength of high performance concrete using artificial 
-neural networks," Cement and Concrete Research, Vol. 28, No. 12, pp. 1797-1808 (1998).
-
-Others
-2. I-Cheng Yeh, "Modeling Concrete Strength with Augment-Neuron Networks," J. of 
-Materials in Civil Engineering, ASCE, Vol. 10, No. 4, pp. 263-268 (1998).
-
-3. I-Cheng Yeh, "Design of High Performance Concrete Mixture Using Neural Networks,"  
-J. of Computing in Civil Engineering, ASCE, Vol. 13, No. 1, pp. 36-42 (1999).
-
-4. I-Cheng Yeh, "Prediction of Strength of Fly Ash and Slag Concrete By The Use of 
-Artificial Neural Networks," Journal of the Chinese Institute of Civil and Hydraulic 
-Engineering, Vol. 15, No. 4, pp. 659-663 (2003).
-
-5. I-Cheng Yeh, "A mix Proportioning Methodology for Fly Ash and Slag Concrete Using 
-Artificial Neural Networks," Chung Hua Journal of Science and Engineering, Vol. 1, No. 
-1, pp. 77-84 (2003).
-
-6. Yeh, I-Cheng, "Analysis of strength of concrete using design of experiments and 
-neural networks,": Journal of Materials in Civil Engineering, ASCE, Vol.18, No.4, 
-pp.597-604 ?2006?.
-
----------------------------------
-
-Acknowledgements, Copyright Information, and Availability:
-
-NOTE: Reuse of this database is unlimited with retention of copyright notice for 
-Prof. I-Cheng Yeh and the following published paper:
-
-I-Cheng Yeh, "Modeling of strength of high performance concrete using artificial 
-neural networks," Cement and Concrete Research, Vol. 28, No. 12, pp. 1797-1808 (1998)
-
-
+---
 
