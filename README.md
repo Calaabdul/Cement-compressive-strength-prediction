@@ -62,3 +62,30 @@ cd concrete-compressive-strength
 
 ---
 
+Run locally with Streamlit:
+`streamlit run app.py`
+
+Or access the live demos above.
+
+## 🖱️ How to Use the App
+
+- Open the deployed app on Render or Streamlit Cloud.
+- Enter the physical measurements of an abalone (Length, Diameter, Weight, etc.).
+- Click Predict.
+
+The model will output the estimated age (in years) of the abalone.
+
+👉 Example Screenshot:
+
+
+## 🛠 Tech Stack
+
+Language: Python 3.9+
+
+Libraries: Pandas, NumPy, Scikit-learn, Streamlit, Matplotlib/Seaborn
+
+Deployment: Streamlit Cloud, Render
+
+
+## Create a virtual environment and install dependencies:
+`pip install -r requirements.txt`
