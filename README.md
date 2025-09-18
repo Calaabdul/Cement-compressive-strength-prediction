@@ -56,9 +56,9 @@ This project builds a **machine learning model** that predicts the compressive s
 ## 💻 Installation & Usage  
 
 Clone the repository:  
-```bash
-git clone 
-cd concrete-compressive-strength
+`bash
+git clone git@github.com:Calaabdul/Cement-compressive-strength-prediction.git
+cd concrete-compressive-strength`
 
 ---
 
@@ -75,8 +75,6 @@ Or access the live demos above.
 
 The model will output the estimated age (in years) of the abalone.
 
-👉 Example Screenshot:
-
 
 ## 🛠 Tech Stack
 
@@ -89,3 +87,4 @@ Deployment: Streamlit Cloud, Render
 
 ## Create a virtual environment and install dependencies:
 `pip install -r requirements.txt`
+
